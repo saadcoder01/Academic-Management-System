@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body class="body1">
+    <div class="form-container">
+        <h2>Register as Student</h2>
+        <form method="post" action="Student-AI-Register.php">
+            <label for="sName">Student Name:</label> 
+            <input type="text" name="sName" required>
+            <label for="fName">Father Name:</label> 
+            <input type="text" name="fName" required>
+            <label for="age">Age:</label> 
+            <input type="number" name="age" required>
+            <label for="sContact">Student Contact:</label>
+            <input type="tel" name="sContact" required>
+            <label for="fContact">Father Contact:</label> 
+            <input type="tel" name="fContact" required>
+            <label for="sCNIC">CNIC:</label> 
+            <input type="text" name="sCNIC" required>
+            <label for="sCity">City:</label> 
+            <input type="text" name="sCity" required>
+            <label for="sEmail">Email:</label>
+            <input type="email" name="sEmail" required>
+            <label for="password">Password:</label> 
+            <input type="password" name="password" required>
+            <button type="submit" id="Register" name="Register">Register</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById("Register").addEventListener("click", function() {
+    alert("You are Registered Now! ");
+});
+    </script>
+</body>
+</html>

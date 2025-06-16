@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Faculty Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body1">
+    <div class="form-container">
+        <h2>Register as Faculty</h2>
+        <form method="post" action="Faculty-Register.php">
+            <label for="facName">Faculty Name:</label>
+            <input type="text" name="facName" required>
+            <label for="fAge">Age:</label>
+            <input type="number" name="fAge" required>
+            <label for="facContact">Contact:</label> 
+            <input type="tel" name="facContact" required>
+            <label for="fCNIC">CNIC:</label> 
+            <input type="text" name="fCNIC" required>
+            <label for="fCity">City:</label> 
+            <input type="text" name="fCity" required>
+            <label for="fEmail">Email:</label> 
+            <input type="email" name="fEmail" required>
+            <label for="fSalary">Salary:</label> 
+            <input type="number" name="fSalary" required>
+            <label for="fPassword">Password:</label> 
+            <input type="password" name="fPassword" required>
+            <button type="submit" id="Register-Faculty" name="Register">Register</button>
+        </form>
+    </div>
+
+    <script >
+        document.getElementById("Register-Faculty").addEventListener("click", function() {
+    alert("You are Registered Now! ");
+});
+    </script>
+
+</body>
+</html>
